@@ -12,6 +12,18 @@
  *
  */
 function findIndex(array, value) {
+//   let leng = array.length;
+//   let middle = Math.floor(leng / 2);
+//   while (middle || middle < array.length) {
+//     middle = Math.floor(leng / 2);
+//     if (array[middle] > value) {
+//       leng = middle;
+//     } else if (array[middle] < value) {
+//       leng = leng + Math.floor(middle / 2) + 1;
+//     } else if (array[middle] === value) {
+//       return middle;
+//     }
+//   }
   for (let i = 0; i < array.length; i++) {
     if (array[i] === value) return i;
   }
